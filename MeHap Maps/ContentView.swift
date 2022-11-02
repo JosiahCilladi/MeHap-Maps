@@ -43,6 +43,16 @@ struct ContentView: View {
     @State private var showDetails = false
     @State private var testText = "Texts"
     
+    struct Location: Identifiable {
+        let id = UUID()
+        let name: String
+        let coordinate: CLLocationCoordinate2D
+    }
+    
+     var locations = [
+        Location(name: "Location One", coordinate: CLLocationCoordinate2D(latitude: 41.10474, longitude: -72.08910)),
+        Location(name: "Location Two", coordinate: CLLocationCoordinate2D(latitude: 41.10117, longitude: -72.09921))
+    ]
     
     
     // Test
@@ -51,12 +61,31 @@ struct ContentView: View {
             
             ZStack(alignment: .bottomLeading) {
                 
-                Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
-                
+                Map(coordinateRegion: $viewModel.region, showsUserLocation: true, annotationItems: locations){ location in
+                    
+                    // TODO move Locations and Location anotations to diffrent files
+                    MapAnnotation(coordinate: location.coordinate){
+                        NavigationLink {
+                            Text(location.name)
+                        } label:{
+                            HStack {
+                                Circle()
+                                    .stroke(.blue, lineWidth: 5)
+                                    .frame(width: 20, height: 20)
+                                    .onTapGesture{
+                                        print("Tapped on \(location.name)")
+                                    }
+                                Text(location.name)
+                            }
+                            
+                        }
+                            
+                        
+                    }
+                    
+                }
                     .ignoresSafeArea()
-                // Location Dot Color
-                
-                    .accentColor(Color(.systemPink))
+                    .accentColor(Color(.black))
                     .onAppear {
                         viewModel.checkIfLocationServicesIsEnabled()
                     }
@@ -192,6 +221,7 @@ struct ContentView: View {
         }
     
     
+    // TODO Move WaypointsTypeView to new File
     struct waypointsTypeView: View {
         
         @State private var isShowingWaypointTypes = false

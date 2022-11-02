@@ -13,16 +13,22 @@ import MapKit
 
 enum MapDetails {
     
-    static let staringLocation = CLLocationCoordinate2D(latitude: 39.7392 , longitude: -104.9903)
+    static let staringLocation = CLLocationCoordinate2D(latitude: 41.10119 , longitude: -71.09922)
     
     static let defaultSpan = MKCoordinateSpan(latitudeDelta: 0.001, longitudeDelta: 0.001)
+    
+    
     
     
 }
 
 
-
+// TODO Recreat MapViewModel with New MK Map View
 final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
+    
+    
+    
+    
     
     @Published var region = MKCoordinateRegion(center: MapDetails.staringLocation,
                                           span: MapDetails.defaultSpan)
@@ -30,6 +36,8 @@ final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate 
     // TODO : impliment a point of interest filter
     @Published var pointsOfIntrest = MKPointOfInterestFilter(including: [.nationalPark])
 
+    
+    
     
     // ? is optional
     var locationManager: CLLocationManager?

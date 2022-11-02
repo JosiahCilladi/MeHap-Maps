@@ -34,6 +34,8 @@ struct LiveTextFile: View {
         
         VStack() {
             
+            
+            // TODO Replace ScanTextField with native SwiftUI text to speach intagration
             ScanTextField("Enter name", text: $text)
                 .padding(18)
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
