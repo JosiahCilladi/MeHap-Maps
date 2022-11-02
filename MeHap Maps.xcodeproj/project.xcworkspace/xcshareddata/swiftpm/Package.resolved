@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "scantextfield",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/chFlorian/ScanTextField.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "97f01a6077e8f908d3723dc0b5495a67553007c3"
+      }
+    }
+  ],
+  "version" : 2
+}

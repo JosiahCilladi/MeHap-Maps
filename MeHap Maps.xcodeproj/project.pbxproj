@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2129905C28F22C9400E8A59F /* MeHap_MapsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2129905B28F22C9400E8A59F /* MeHap_MapsApp.swift */; };
+		2129905E28F22C9400E8A59F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2129905D28F22C9400E8A59F /* ContentView.swift */; };
+		2129906028F22C9700E8A59F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2129905F28F22C9700E8A59F /* Assets.xcassets */; };
+		2129906328F22C9700E8A59F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2129906228F22C9700E8A59F /* Preview Assets.xcassets */; };
+		2129906D28F22C9700E8A59F /* MeHap_MapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2129906C28F22C9700E8A59F /* MeHap_MapsTests.swift */; };
+		2129907728F22C9700E8A59F /* MeHap_MapsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2129907628F22C9700E8A59F /* MeHap_MapsUITests.swift */; };
+		2129907928F22C9700E8A59F /* MeHap_MapsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2129907828F22C9700E8A59F /* MeHap_MapsUITestsLaunchTests.swift */; };
+		2129908628F36DB200E8A59F /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2129908528F36DB200E8A59F /* MapViewModel.swift */; };
+		21653FC029021BAA0012D36E /* ScanTextField in Frameworks */ = {isa = PBXBuildFile; productRef = 21653FBF29021BAA0012D36E /* ScanTextField */; };
+		21A1689E2904A49E002031EB /* LiveTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A1689D2904A49E002031EB /* LiveTextView.swift */; };
+		21A168A22904F173002031EB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A168A12904F173002031EB /* SettingsView.swift */; };
+		21A168A42904F18A002031EB /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A168A32904F18A002031EB /* NoteView.swift */; };
+		21A168A62904F1B0002031EB /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A168A52904F1B0002031EB /* PhotoView.swift */; };
+		21A168A82904F1D1002031EB /* ShazamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A168A72904F1D1002031EB /* ShazamView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2129906928F22C9700E8A59F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2129905028F22C9400E8A59F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2129905728F22C9400E8A59F;
+			remoteInfo = "MeHap Maps";
+		};
+		2129907328F22C9700E8A59F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2129905028F22C9400E8A59F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2129905728F22C9400E8A59F;
+			remoteInfo = "MeHap Maps";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2129905828F22C9400E8A59F /* MeHap Maps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MeHap Maps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2129905B28F22C9400E8A59F /* MeHap_MapsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeHap_MapsApp.swift; sourceTree = "<group>"; };
+		2129905D28F22C9400E8A59F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2129905F28F22C9700E8A59F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2129906228F22C9700E8A59F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2129906828F22C9700E8A59F /* MeHap MapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MeHap MapsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2129906C28F22C9700E8A59F /* MeHap_MapsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeHap_MapsTests.swift; sourceTree = "<group>"; };
+		2129907228F22C9700E8A59F /* MeHap MapsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MeHap MapsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2129907628F22C9700E8A59F /* MeHap_MapsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeHap_MapsUITests.swift; sourceTree = "<group>"; };
+		2129907828F22C9700E8A59F /* MeHap_MapsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeHap_MapsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2129908528F36DB200E8A59F /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		21A1689D2904A49E002031EB /* LiveTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTextView.swift; sourceTree = "<group>"; };
+		21A168A12904F173002031EB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		21A168A32904F18A002031EB /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		21A168A52904F1B0002031EB /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		21A168A72904F1D1002031EB /* ShazamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShazamView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2129905528F22C9400E8A59F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21653FC029021BAA0012D36E /* ScanTextField in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2129906528F22C9700E8A59F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2129906F28F22C9700E8A59F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2129904F28F22C9400E8A59F = {
+			isa = PBXGroup;
+			children = (
+				2129905A28F22C9400E8A59F /* MeHap Maps */,
+				2129906B28F22C9700E8A59F /* MeHap MapsTests */,
+				2129907528F22C9700E8A59F /* MeHap MapsUITests */,
+				2129905928F22C9400E8A59F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2129905928F22C9400E8A59F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2129905828F22C9400E8A59F /* MeHap Maps.app */,
+				2129906828F22C9700E8A59F /* MeHap MapsTests.xctest */,
+				2129907228F22C9700E8A59F /* MeHap MapsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2129905A28F22C9400E8A59F /* MeHap Maps */ = {
+			isa = PBXGroup;
+			children = (
+				2129905B28F22C9400E8A59F /* MeHap_MapsApp.swift */,
+				2129908528F36DB200E8A59F /* MapViewModel.swift */,
+				2129905D28F22C9400E8A59F /* ContentView.swift */,
+				21A1689D2904A49E002031EB /* LiveTextView.swift */,
+				21A168A12904F173002031EB /* SettingsView.swift */,
+				21A168A32904F18A002031EB /* NoteView.swift */,
+				21A168A52904F1B0002031EB /* PhotoView.swift */,
+				21A168A72904F1D1002031EB /* ShazamView.swift */,
+				2129905F28F22C9700E8A59F /* Assets.xcassets */,
+				2129906128F22C9700E8A59F /* Preview Content */,
+			);
+			path = "MeHap Maps";
+			sourceTree = "<group>";
+		};
+		2129906128F22C9700E8A59F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2129906228F22C9700E8A59F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2129906B28F22C9700E8A59F /* MeHap MapsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2129906C28F22C9700E8A59F /* MeHap_MapsTests.swift */,
+			);
+			path = "MeHap MapsTests";
+			sourceTree = "<group>";
+		};
+		2129907528F22C9700E8A59F /* MeHap MapsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2129907628F22C9700E8A59F /* MeHap_MapsUITests.swift */,
+				2129907828F22C9700E8A59F /* MeHap_MapsUITestsLaunchTests.swift */,
+			);
+			path = "MeHap MapsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2129905728F22C9400E8A59F /* MeHap Maps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2129907C28F22C9700E8A59F /* Build configuration list for PBXNativeTarget "MeHap Maps" */;
+			buildPhases = (
+				2129905428F22C9400E8A59F /* Sources */,
+				2129905528F22C9400E8A59F /* Frameworks */,
+				2129905628F22C9400E8A59F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MeHap Maps";
+			packageProductDependencies = (
+				21653FBF29021BAA0012D36E /* ScanTextField */,
+			);
+			productName = "MeHap Maps";
+			productReference = 2129905828F22C9400E8A59F /* MeHap Maps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2129906728F22C9700E8A59F /* MeHap MapsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2129907F28F22C9700E8A59F /* Build configuration list for PBXNativeTarget "MeHap MapsTests" */;
+			buildPhases = (
+				2129906428F22C9700E8A59F /* Sources */,
+				2129906528F22C9700E8A59F /* Frameworks */,
+				2129906628F22C9700E8A59F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2129906A28F22C9700E8A59F /* PBXTargetDependency */,
+			);
+			name = "MeHap MapsTests";
+			productName = "MeHap MapsTests";
+			productReference = 2129906828F22C9700E8A59F /* MeHap MapsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2129907128F22C9700E8A59F /* MeHap MapsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2129908228F22C9700E8A59F /* Build configuration list for PBXNativeTarget "MeHap MapsUITests" */;
+			buildPhases = (
+				2129906E28F22C9700E8A59F /* Sources */,
+				2129906F28F22C9700E8A59F /* Frameworks */,
+				2129907028F22C9700E8A59F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2129907428F22C9700E8A59F /* PBXTargetDependency */,
+			);
+			name = "MeHap MapsUITests";
+			productName = "MeHap MapsUITests";
+			productReference = 2129907228F22C9700E8A59F /* MeHap MapsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2129905028F22C9400E8A59F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					2129905728F22C9400E8A59F = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					2129906728F22C9700E8A59F = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 2129905728F22C9400E8A59F;
+					};
+					2129907128F22C9700E8A59F = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 2129905728F22C9400E8A59F;
+					};
+				};
+			};
+			buildConfigurationList = 2129905328F22C9400E8A59F /* Build configuration list for PBXProject "MeHap Maps" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2129904F28F22C9400E8A59F;
+			packageReferences = (
+				21653FBE29021BAA0012D36E /* XCRemoteSwiftPackageReference "ScanTextField" */,
+			);
+			productRefGroup = 2129905928F22C9400E8A59F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2129905728F22C9400E8A59F /* MeHap Maps */,
+				2129906728F22C9700E8A59F /* MeHap MapsTests */,
+				2129907128F22C9700E8A59F /* MeHap MapsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2129905628F22C9400E8A59F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2129906328F22C9700E8A59F /* Preview Assets.xcassets in Resources */,
+				2129906028F22C9700E8A59F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2129906628F22C9700E8A59F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2129907028F22C9700E8A59F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2129905428F22C9400E8A59F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21A168A22904F173002031EB /* SettingsView.swift in Sources */,
+				2129905E28F22C9400E8A59F /* ContentView.swift in Sources */,
+				21A168A82904F1D1002031EB /* ShazamView.swift in Sources */,
+				21A168A62904F1B0002031EB /* PhotoView.swift in Sources */,
+				21A168A42904F18A002031EB /* NoteView.swift in Sources */,
+				21A1689E2904A49E002031EB /* LiveTextView.swift in Sources */,
+				2129905C28F22C9400E8A59F /* MeHap_MapsApp.swift in Sources */,
+				2129908628F36DB200E8A59F /* MapViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2129906428F22C9700E8A59F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2129906D28F22C9700E8A59F /* MeHap_MapsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2129906E28F22C9700E8A59F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2129907728F22C9700E8A59F /* MeHap_MapsUITests.swift in Sources */,
+				2129907928F22C9700E8A59F /* MeHap_MapsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2129906A28F22C9700E8A59F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2129905728F22C9400E8A59F /* MeHap Maps */;
+			targetProxy = 2129906928F22C9700E8A59F /* PBXContainerItemProxy */;
+		};
+		2129907428F22C9700E8A59F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2129905728F22C9400E8A59F /* MeHap Maps */;
+			targetProxy = 2129907328F22C9700E8A59F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2129907A28F22C9700E8A59F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2129907B28F22C9700E8A59F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2129907D28F22C9700E8A59F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MeHap Maps/Preview Content\"";
+				DEVELOPMENT_TEAM = 58XHSX8T6Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This App need your Location to show you on the map";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "MeHap.MeHap-Maps";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2129907E28F22C9700E8A59F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MeHap Maps/Preview Content\"";
+				DEVELOPMENT_TEAM = 58XHSX8T6Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This App need your Location to show you on the map";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "MeHap.MeHap-Maps";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2129908028F22C9700E8A59F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "MeHap.MeHap-MapsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeHap Maps.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MeHap Maps";
+			};
+			name = Debug;
+		};
+		2129908128F22C9700E8A59F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "MeHap.MeHap-MapsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeHap Maps.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MeHap Maps";
+			};
+			name = Release;
+		};
+		2129908328F22C9700E8A59F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "MeHap.MeHap-MapsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MeHap Maps";
+			};
+			name = Debug;
+		};
+		2129908428F22C9700E8A59F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "MeHap.MeHap-MapsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MeHap Maps";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2129905328F22C9400E8A59F /* Build configuration list for PBXProject "MeHap Maps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2129907A28F22C9700E8A59F /* Debug */,
+				2129907B28F22C9700E8A59F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2129907C28F22C9700E8A59F /* Build configuration list for PBXNativeTarget "MeHap Maps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2129907D28F22C9700E8A59F /* Debug */,
+				2129907E28F22C9700E8A59F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2129907F28F22C9700E8A59F /* Build configuration list for PBXNativeTarget "MeHap MapsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2129908028F22C9700E8A59F /* Debug */,
+				2129908128F22C9700E8A59F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2129908228F22C9700E8A59F /* Build configuration list for PBXNativeTarget "MeHap MapsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2129908328F22C9700E8A59F /* Debug */,
+				2129908428F22C9700E8A59F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		21653FBE29021BAA0012D36E /* XCRemoteSwiftPackageReference "ScanTextField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/chFlorian/ScanTextField.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		21653FBF29021BAA0012D36E /* ScanTextField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21653FBE29021BAA0012D36E /* XCRemoteSwiftPackageReference "ScanTextField" */;
+			productName = ScanTextField;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2129905028F22C9400E8A59F /* Project object */;
+}
