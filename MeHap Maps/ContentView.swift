@@ -30,8 +30,7 @@ struct PressableButtonStyle: ButtonStyle {
             .scaleEffect(configuration.isPressed ? 0.9 : 1.0)
             .brightness(configuration.isPressed ? 0.08 : 0)
             //.opacity(configuration.isPressed ? 0.7 : 1.0)
-            
-       
+        
     }
     
 }
@@ -46,7 +45,7 @@ struct ContentView: View {
     
     
     
-    
+    // Test
     var body: some View {
         NavigationView{
             
