@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2128DF982913CACB00BE1155 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128DF972913CACB00BE1155 /* DataController.swift */; };
+		2128DF9E291470E900BE1155 /* MeHapMaps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2128DF9C291470E900BE1155 /* MeHapMaps.xcdatamodeld */; };
 		2129905C28F22C9400E8A59F /* MeHap_MapsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2129905B28F22C9400E8A59F /* MeHap_MapsApp.swift */; };
 		2129905E28F22C9400E8A59F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2129905D28F22C9400E8A59F /* ContentView.swift */; };
 		2129906028F22C9700E8A59F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2129905F28F22C9700E8A59F /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2128DF972913CACB00BE1155 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		2128DF9D291470E900BE1155 /* MeHapMaps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeHapMaps.xcdatamodel; sourceTree = "<group>"; };
 		2129905828F22C9400E8A59F /* MeHap Maps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MeHap Maps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2129905B28F22C9400E8A59F /* MeHap_MapsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeHap_MapsApp.swift; sourceTree = "<group>"; };
 		2129905D28F22C9400E8A59F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 		2129904F28F22C9400E8A59F = {
 			isa = PBXGroup;
 			children = (
+				2128DF9C291470E900BE1155 /* MeHapMaps.xcdatamodeld */,
 				2129905A28F22C9400E8A59F /* MeHap Maps */,
 				2129906B28F22C9700E8A59F /* MeHap MapsTests */,
 				2129907528F22C9700E8A59F /* MeHap MapsUITests */,
@@ -111,6 +116,7 @@
 				2129905B28F22C9400E8A59F /* MeHap_MapsApp.swift */,
 				2129908528F36DB200E8A59F /* MapViewModel.swift */,
 				2129905D28F22C9400E8A59F /* ContentView.swift */,
+				2128DF972913CACB00BE1155 /* DataController.swift */,
 				21A1689D2904A49E002031EB /* LiveTextView.swift */,
 				21A168A12904F173002031EB /* SettingsView.swift */,
 				21A168A32904F18A002031EB /* NoteView.swift */,
@@ -283,10 +289,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2128DF9E291470E900BE1155 /* MeHapMaps.xcdatamodeld in Sources */,
 				21A168A22904F173002031EB /* SettingsView.swift in Sources */,
 				2129905E28F22C9400E8A59F /* ContentView.swift in Sources */,
 				21A168A82904F1D1002031EB /* ShazamView.swift in Sources */,
 				21A168A62904F1B0002031EB /* PhotoView.swift in Sources */,
+				2128DF982913CACB00BE1155 /* DataController.swift in Sources */,
 				21A168A42904F18A002031EB /* NoteView.swift in Sources */,
 				21A1689E2904A49E002031EB /* LiveTextView.swift in Sources */,
 				2129905C28F22C9400E8A59F /* MeHap_MapsApp.swift in Sources */,
@@ -632,6 +640,19 @@
 			productName = ScanTextField;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		2128DF9C291470E900BE1155 /* MeHapMaps.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2128DF9D291470E900BE1155 /* MeHapMaps.xcdatamodel */,
+			);
+			currentVersion = 2128DF9D291470E900BE1155 /* MeHapMaps.xcdatamodel */;
+			path = MeHapMaps.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2129905028F22C9400E8A59F /* Project object */;
 }

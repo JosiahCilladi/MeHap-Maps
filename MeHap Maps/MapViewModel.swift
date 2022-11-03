@@ -13,7 +13,7 @@ import MapKit
 
 enum MapDetails {
     
-    static let staringLocation = CLLocationCoordinate2D(latitude: 41.10119 , longitude: -71.09922)
+    static let staringLocation = CLLocationCoordinate2D(latitude: 40.04286 , longitude: -76.29486)
     
     static let defaultSpan = MKCoordinateSpan(latitudeDelta: 0.001, longitudeDelta: 0.001)
     

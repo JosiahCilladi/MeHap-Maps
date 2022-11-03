@@ -7,6 +7,7 @@
 
 //import CoreLocationUI
 import MapKit
+
 import SwiftUI
 
 
@@ -37,6 +38,10 @@ struct PressableButtonStyle: ButtonStyle {
 
 
 struct ContentView: View {
+    
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var waypoints: FetchedResults <Waypoint>
+    
     @StateObject private var viewModel = MapViewModel()
     
     @State private var isShowingWaypointTypes = false
@@ -49,9 +54,15 @@ struct ContentView: View {
         let coordinate: CLLocationCoordinate2D
     }
     
+    
+    
+    
+    
+    
+    
      var locations = [
-        Location(name: "Location One", coordinate: CLLocationCoordinate2D(latitude: 41.10474, longitude: -72.08910)),
-        Location(name: "Location Two", coordinate: CLLocationCoordinate2D(latitude: 41.10117, longitude: -72.09921))
+        Location(name: "Location One", coordinate: CLLocationCoordinate2D(latitude: 40.04286, longitude: -76.29486)),
+        Location(name: "Location Two", coordinate: CLLocationCoordinate2D(latitude: 40.04366, longitude: -76.29832))
     ]
     
     
@@ -118,17 +129,7 @@ struct ContentView: View {
                                 .frame(width: 45)
                         }
                         
-                            // Ellipsis Waypoint Button
-                            //                        Button (action: {
-                            //                            let impactMed = UIImpactFeedbackGenerator(style: .heavy)
-                            //                            impactMed.impactOccurred()
-                            //
-                            //                        }, label: {
-                            //                            Image(systemName: "ellipsis")
-                            //                                .imageScale(.large)
-                            //                                .frame(height: 45)
-                            //                                .frame(width: 45)
-                            //                        })
+                            
                             
                             Spacer()
                             
@@ -159,8 +160,6 @@ struct ContentView: View {
                                     .frame(width: 45)
                                 
                             })
-                            //.buttonStyle(PressableButtonStyle())
-                            //.padding(11)
                             
                        
                             
@@ -180,8 +179,7 @@ struct ContentView: View {
                                     .frame(width: 45)
                             })
                             
-                            //.buttonStyle(PressableButtonStyle())
-                            //.padding(11)
+                            
                             
                             .sheet(isPresented: $isShowingWaypointTypes){
                                 NavigationView {
@@ -192,8 +190,7 @@ struct ContentView: View {
                             }
                             
                         }
-                        //.padding(11)
-                        //.buttonStyle(PressableButtonStyle())
+                        
                         
                         
                         
@@ -283,23 +280,6 @@ struct ContentView: View {
     
                             })
                             .buttonStyle(PressableButtonStyle())
-
-//                            Button(action: {
-//                                // vibrates when Button is pressed
-//                                let impactMed = UIImpactFeedbackGenerator(style: .heavy)
-//                                impactMed.impactOccurred()
-//                                isShowingWaypointTypes.toggle()
-//                                print("Speak Text Btn Clicked")
-//                            }, label: {
-//                                //Text("One")
-//                                NavigationLink(destination: LiveTextFile()){
-//                                    Image(systemName: "text.viewfinder")
-//                                        .imageScale(.large)
-//                                        .frame(height: 60)
-//                                        .frame(width: 60)
-//                                }
-//                            })
-//                            .buttonStyle(PressableButtonStyle())
                             
                             
                             Button(action: {
